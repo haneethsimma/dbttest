@@ -1,0 +1,18 @@
+version: 2
+sources:
+  - name: RAW
+    description: This is as source for STAGE
+    database: HANEETH_DBT
+    tables:
+      - name: CUSTOMER
+      - name: ORDERS
+      - name: LINEITEM
+      - name: NATION
+  - name: STAGE
+    description: This is a source for Publish
+    database: HANEETH_DBT
+    tables:
+      - name: CUSTOMER
+      - name: ORDERS
+      - name: LINEITEM
+      - name: NATION
